@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # Open data file
 infile = open("../data/data1.txt", "r")  # ".." means "go up one directory"
 
@@ -6,6 +7,7 @@ mean = 0
 n = 0
 
 # Loop to perform sum
+# Note: need to interpret data: it is simply a string in the file
 for number in infile:
     number = float(number)
     mean = mean + number
